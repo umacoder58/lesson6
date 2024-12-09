@@ -5,6 +5,7 @@
 <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+
         <h1>person details</h1>
         <form>
             <fieldset>
@@ -25,5 +26,25 @@
             <input type="checkbox" id="city" value="mumbai">mumbai<br>
             </fieldset>
         </form>
+        <fieldset>
+            <legend><b>enter your marks</b></legend>
+            <form action="/action-page.php" 
+            oninput="x.value=
+            (perseInt(m1.value)+perseInt(m2.value))/2"></form>
+            <label>name</label><br>
+            <input type="text" id="name" ><br><br>
+            <label>marks</label>
+            <select name="subject" id="subject">
+                <option value="maths">maths</option>
+                <option value="telugu">telugu</option>
+            </select>
+             <input type="number" id="m1" name="m1"> <br>
+            <select name="subject" id="subject">
+                <option value="maths">maths</option>
+                <option value="telugu">telugu</option>
+            </select>
+            <input type="number" id="m2" name="m2"> <br>
+            average=<output name="x" for="m1 m2"></output>
+        </fieldset>
     </body>
 </html>
